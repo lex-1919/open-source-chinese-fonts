@@ -1,0 +1,232 @@
+/* 通用 */
+body{
+    background-color: var(--color-white);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+li{
+    list-style: none;
+}
+
+ol{
+    padding-inline-start: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-grey1);
+}
+img{
+    -webkit-user-drag: none;
+}
+
+/* ------------------------------------------------- */
+
+/* 导航栏 */
+header{
+    padding: 0 24px;
+    background-color: var(--color-white);  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-wrapper-mobile{
+    display: none;
+}
+
+/* 导航栏容器 */
+header .header-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* 字体类型-容器 */
+header .header-navset{
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    padding-right: 90px;
+}
+
+/* 字体类型-条目 */
+.header-navset li{
+    color: var(--color-grey1);
+    padding: 24px;
+    font-size: var(--fontsize-t3 );
+    line-height: var(--lineheight-normal);
+}
+
+/* 导航栏-关于 */
+.about{
+    font-size: var(--fontsize-t3 );
+    color: #aaaaaa;
+}
+
+/* ------------------------------------------------- */
+
+/* 内容区域容器 */
+.container{
+    padding: 68px 24px 0px 24px;
+}
+.container-wrapper{
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    grid-gap: 20px;
+}
+
+/* 字体预览图-通栏 */
+.font-wrapper-whole{
+    grid-column: span 12;
+    grid-column-start: span 12;
+    grid-column-end: auto;
+    height: 640px; 
+    display: flex;
+    flex-direction: column;
+}
+/* 字体预览图-半栏 */
+.font-wrapper-half{
+    grid-column: span 6;
+    grid-column-start: span 6;
+    grid-column-end: auto;
+    height: 640px; 
+    display: flex;
+    flex-direction: column;
+}
+/* 展示图容器 */
+.font-img{
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-img img{
+    max-width: 80%;
+    max-height: 80%;
+}
+/* 下载按钮 */
+.download-button{
+    opacity: 0;
+    transition: 150ms;
+}
+.font-wrapper-whole:hover .font-info .download-button{
+    opacity: 1;
+    transition: 150ms;
+}
+.font-wrapper-half:hover .font-info .download-button{
+    opacity: 1;
+    transition: 150ms;
+}
+/* 名称和按钮容器 */
+.font-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 5px 24px;
+}
+
+.mobile-info{
+    display: none;
+}
+/* 名称 */
+.font-info .font-name-light{
+    color: var(--color-white);
+    font-size: var(--fontsize-t3);
+    line-height: 24px;
+}
+
+.font-info .font-name-dark{
+    color: var(--color-grey1);
+    font-size: var(--fontsize-t3);
+    line-height: 24px;
+}
+
+
+/* ------------------------------------------------- */
+/* noto-sans */
+.思源黑体-noto-sans{
+    background-color: #d25d33;
+}
+.思源宋体-noto-serif{
+    background-color: #191F26;
+}
+.台北黑体-taipei-sans{
+    background-color: #d2e6df;
+}
+.更纱黑体-Sarasa-Gothic{
+    background-color: #0B3D91;
+}
+.资源圆体-Resource-Han-Rounded{
+    background-color: #2C2B49;
+}
+.源样明体-GenYoMin{
+    background-color: #FAF9F6;
+}
+.原石黑体-gensen-hei{
+    background-color: #1a1a1a;
+}
+.源泉圆体-gensen-round{
+    background-color: #DCE8E8;
+}
+
+.花园明朝体-Hanazono{
+    background-color: #02805a;
+}
+.全字库正楷体{
+    background-color: #DCDCDC;
+}
+.粉圆-jf{
+    background-color: #1773C8;
+}
+.一点明体{
+    background-color: #005C71;
+}
+.濑户字体简体{
+    background-color: #F5F0EA;
+}
+.思源等宽{
+    background-color: #4f4242;
+}
+.源流明体{
+    background-color: #DFE2E5;
+}
+.源云明体{
+    background-color: #F1F1EC;
+}
+.GNU-Unifont{
+    background-color: #5C4099;
+}
+.文泉驿微米黑{
+    background-color: #E9E1E1;
+}
+.文泉驿正黑{
+    background-color: #2E8B80;
+}
+.全字库正宋{
+    background-color: #6B6585;
+}
+.AR-PL-UKai{
+    background-color: #1E1E1E;
+}
+.台湾教育部标准楷书{
+    background-color: #A8B8AB;
+}
+.AR-PL-UMing{
+    background-color: #212959;
+}
+.一点钢笔鹤体{
+    background-color: #B03E57;
+}
+
+/* ------------------------------------------------- */

@@ -1,0 +1,30 @@
+/* ------------------------------------------------- */
+
+/* 颜色 */
+:root{       
+    --color-black: #000000;
+    --color-grey1: #111111;
+    --color-white: #ffffff;
+    --color-background: #F7F7FA;
+} 
+
+/* ------------------------------------------------- */
+
+/* 字号 */
+:root{
+    --fontsize-t1: 12px;
+    --fontsize-t2: 14px;
+    --fontsize-t3: 16px;
+    --fontsize-t4: 18px;
+    --fontsize-t5: 20px;
+}
+
+/* ------------------------------------------------- */
+
+/* 字重 */
+:root{
+    --fontweight-normal: 400;
+    --fontweight-bold: 700;
+}
+
+

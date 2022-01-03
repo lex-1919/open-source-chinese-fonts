@@ -1,0 +1,47 @@
+@media screen and (max-width: 800px){
+    .font-wrapper-half{
+        grid-column: span 12;
+        grid-column-start: span 12;
+        height: 400px; 
+    }
+    .font-wrapper-whole{
+        height: 400px; 
+    }
+    .font-info{
+        display: none;
+    }
+    .mobile-info{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        color: #111111;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-wrapper-mobile{
+        display: block;
+    }
+    .header-navset{
+        display: block  ;
+    }
+    header .header-wrapper{
+        display: none;
+    }
+    .font-img img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+    header img{
+        width: 80%;
+        height: auto;
+    }
+    .container{
+        padding-top: 40px;
+    }
+    .fold-box a{
+        padding: 20px 0px;
+        display: block;
+    }
+}
